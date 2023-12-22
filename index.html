@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Rodrigues - Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <script src="./assets/script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <img src="./assets/img/logo.png" alt="logotipo" class="logo" />
+
+      <nav class="menu desktop">
+        <a href="#home" class="item-menu">HOME</a>
+        <a href="#about" class="item-menu">ABOUT</a>
+        <a href="#skills" class="item-menu">SKILLS</a>
+        <a href="#projects" class="item-menu">PROJECTS</a>
+        <a href="#contact" class="item-menu">CONTACT</a>
+      </nav>
+
+      <div class="theme">
+        <i class="bi bi-sun" id="light"></i>
+        <i class="bi bi-moon" id="dark"></i>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="home">
+        <div class="div-text">
+          <div>
+            <h2>HELLO, I'M</h2>
+            <h1>CARLOS <span>RODRIGUES</span></h1>
+            <h3><span>FRONT-END</span> DEVELOPER</h3>
+          </div>
+
+          <h4>WELCOME TO MY PORTFOLIO</h4>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h1>ABOUT ME</h1>
+        <div class="text-about">
+          <p>
+            Hello, my name is Carlos, I'm 19 years old, I'm currently studying
+            systems development at the SENAI school and this is the beginning of
+            my career as a developer.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h1>MY SKILLS</h1>
+
+        <div>
+          <div class="mySkills">
+            <p>DEVELOPMENT SKILLS</p>
+            <ul>
+              <li>
+                <h3>HTML</h3>
+                <span class="barras"><span class="html"></span></span>
+              </li>
+              <li>
+                <h3>CSS</h3>
+                <span class="barras"><span class="css"></span></span>
+              </li>
+              <li>
+                <h3>JAVASCRIPT</h3>
+                <span class="barras"><span class="js"></span></span>
+              </li>
+              <li>
+                <h3>C</h3>
+                <span class="barras"><span class="c"></span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="mySkills">
+            <p>OTHER SKILLS</p>
+            <ul>
+              <li>
+                <h3>EXCEL</h3>
+                <span class="barras"><span class="excel"></span></span>
+              </li>
+              <li>
+                <h3>POWER BI</h3>
+                <span class="barras"><span class="power-bi"></span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="projects" class="projects">
+        <h1>MY PROJECTS</h1>
+        <div class="my-projects">
+          <a href="./assets/projects/pjct-1/index.html" target="_blank">
+            <div class="card">
+              <div class="first-content">
+                <img src="./assets/projects/pjct-1/assets/img/logo.jpg">
+              </div>
+              <div class="second-content">
+                <h2>RECIPE WEBSITE</h2>
+                <p>A simple recipe website using HTML and CSS.</p>
+              </div>
+            </div>
+          </a>
+          <a href="./assets/projects/pjct-2/index.html" target="_blank">
+            <div class="card">
+              <div class="first-content">
+                <img src="./assets/projects/pjct-2/assets/img/logo.png" alt="">
+              </div>
+              <div class="second-content">
+                <h2>GAME STORE</h2>
+                <p>A simple game store using HTML and CSS.</p>
+              </div>
+            </div>
+          </a>
+          <a href="./assets/projects/pjct-3/index.html" target="_blank">
+            <div class="card">
+              <div class="first-content">
+                <img src="./assets/projects/pjct-3/assets/img/js.png">
+              </div>
+              <div class="second-content">
+                <h2>JS EXERCISES</h2>
+              </div>
+            </div>
+          </a>
+          <a href="./assets/projects/pjct-4/Loja/app/index.html" target="_blank">
+            <div class="card">
+              <div class="first-content">
+                <img src="./assets/projects/pjct-4/Loja/assets/logo_2.png">
+              </div>
+              <div class="second-content">
+                <h2>GAME STORE</h2>
+                <p>A simple game store make in classroom using HTML, CSS and JavaScript.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h1>CONTACT ME</h1>
+
+        <form class="form-contact" action="" method="post">
+          <input
+            class="name"
+            type="text"
+            placeholder="Full Name"
+            autocomplete="off"
+            required
+          />
+          <div>
+            <input
+              class="email"
+              type="email"
+              placeholder="Email Address"
+              autocomplete="off"
+              required
+            />
+            <input
+              class="number"
+              type="number"
+              placeholder="Number"
+              autocomplete="off"
+            />
+          </div>
+          <textarea
+            class="message"
+            style="resize: none"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h4>Copyright © 2023 by Carlos Rodrigues | All Rights Reserved.</h4>
+
+        <a href="#home"><i class="bi bi-chevron-double-up"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

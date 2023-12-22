@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 15vh;
+}
+a{
+    text-decoration: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+    background: rgb(240, 240, 240);
+    overflow-x: hidden;
+    transition: .5s;
+}
+body.dark {
+    background: rgb(20, 20, 20);
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+/*-------------------------------------------------------------*/
+
+body.dark header {
+    background: rgb(20, 20, 20);
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, .4), -1px -1px 5px rgba(255, 255, 255, .4);
+}
+body.dark header:hover {
+    background: rgb(240, 240, 240);
+}
+body.dark header:hover .menu.desktop .item-menu{
+    color: rgb(20, 20, 20);
+}
+body.dark header:hover .logo {
+    filter: invert(0);
+}
+body.dark header:hover i {
+    color: rgb(20, 20, 20);
+}
+body.dark .item-menu {
+    color: rgb(240, 240, 240);
+}
+body.dark .logo {
+    filter: invert(1);
+}
+body.dark i {
+    color: rgb(240, 240, 240);
+}
+header {
+    width: 40%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    border-radius: 100px;
+    margin-top: 2vh;
+    background: rgb(240, 240, 240);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4), -1px -1px 5px rgba(0, 0, 0, .4);
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    transition: 1s;
+}
+header:hover {
+    background: rgb(0, 0, 0);
+}
+header:hover .menu.desktop .item-menu {
+    color: rgb(240, 240, 240);
+}
+header:hover .logo {
+    filter: invert(1);
+}
+header:hover i {
+    color: rgb(240, 240, 240);
+}
+.menu {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.item-menu {
+    font-size: .95rem;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.item-menu:hover {
+    transform: scale(1.15);
+    font-weight: bold;
+}
+.logo {
+    width: 40px;
+    transition: .5s;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+.theme {
+    width: auto;
+    height: auto;
+}
+.theme i {
+    font-size: 1.5rem;
+    transition: .5s;
+}
+.theme i:hover {
+    cursor: pointer;
+}
+#dark {
+    display: none;
+}
+
+/*-------------------------------------------------------------*/
+
+main {
+    width: 70%;
+    height: auto;
+    margin-top: 10vh;
+}
+
+/*-------------------------------------------------------------*/
+
+body.dark .div-text h2 {
+    color: rgb(240, 240, 240);
+}
+body.dark .div-text h1 {
+    color: rgb(240, 240, 240);
+}
+body.dark .div-text h3 {
+    color: rgb(240, 240, 240);
+}
+body.dark .div-text h4 {
+    color: rgb(240, 240, 240);
+}
+.home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-text {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    transform: translateY(-80px);
+    text-align: center;
+}
+.div-text div {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.div-text h2 {
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.div-text h1 {
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    transition: .5s;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.div-text h1 span {
+    color: rgb(0, 100, 255);
+    transition: .5s;
+}
+.div-text h1:hover {
+    transform: scale(1.1);
+}
+.div-text h1:hover span {
+    text-shadow: 3px 3px rgb(255, 0, 130);
+}
+.div-text h3 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    transition: .5s;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+.div-text h3 span{
+    color: rgb(255, 0, 130);
+    transition: .5s;
+}
+.div-text h3:hover {
+    transform: scale(1.1);
+}
+.div-text h3:hover span {
+    text-shadow: 2px 2px rgb(0, 100, 255);
+}
+.div-text h4 {
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+/*-------------------------------------------------------------*/
+
+body.dark .text-about p {
+    color: rgb(240, 240, 240);
+}
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.about > h1 {
+    font-size: 3.2rem;
+    transition: .5s;
+    color: rgb(100, 0, 200);
+    letter-spacing: 5px;
+}
+.about > h1:hover {
+    color: rgb(255, 0, 130) ;
+}
+.text-about {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+.text-about p {
+    max-width: 100%;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 30px;
+    word-wrap: break-word;
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------------------*/
+
+.skills {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.skills > h1 {
+    font-size: 3.2rem;
+    transition: .5s;
+    color: rgb(255, 0, 130);
+    letter-spacing: 5px;
+}
+.skills > h1:hover {
+    color: rgb(100, 0, 200) ;
+}
+.skills > div {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+  }
+body.dark .mySkills {
+    background: rgb(50, 50, 50);
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, .4), -1px -1px 5px rgba(255, 255, 255, .4);
+    color: rgb(255, 255, 255);
+}
+body.dark .mySkills .barras {
+    background: rgb(80, 80, 80);
+}
+body.dark .barras span {
+    background: rgb(180, 180, 180);
+}
+.mySkills {
+   width: 500px;
+   height: 350px;
+   padding: 40px;
+   border-radius: 5px;
+   background-color: rgb(200, 200, 200);
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, .4), -1px -1px 5px rgba(0, 0, 0, .4);
+   color: rgb(0, 0, 0);
+   margin-top: 5%;
+   transition: .5s;
+}
+.mySkills:hover {
+    transform: scale(1.05);
+} 
+.mySkills p {
+   font-size: 1.5rem;
+   font-weight: bold;
+} 
+.mySkills ul {
+   list-style: none;
+}
+.mySkills ul li {
+   margin: 20px 0;
+}
+.mySkills .barras {
+   background-color: rgb(255, 255, 255);
+   display: block;
+   height: 20px;
+   position: relative;
+   border-radius: 5px;
+   overflow: hidden;
+   transition: 0.5s ease-in-out;
+}
+.barras > span {
+   height: 20px;
+   background: rgb(70, 70, 70);
+   position: absolute;
+   border-radius: 5px;
+}
+.html {
+   width: 60%;
+   animation: html 1.3s ease-in-out;
+ }
+.css {
+   width: 50%;
+   animation: css 1.3s ease-in-out;
+}
+.c {
+   width: 30%;
+   animation: c 1.3s ease-in-out;
+}
+.js {
+    width: 20%;
+    animation: js 1.3s ease-in-out;
+}
+.excel {
+   width: 65%;
+   animation: excel 1.3s ease-in-out;
+}
+.power-bi {
+   width: 35%;
+   animation: power-bi 1.3s ease-in-out;
+}
+
+/*-------------------------------------------------------------*/
+
+body.dark .card {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, .4), -1px -1px 5px rgba(255, 255, 255, .4);
+    background: rgb(50, 50, 50);
+}
+body.dark .card:hover {
+    background: rgb(200, 200, 200);
+}
+body.dark .second-content {
+    color: rgb(0, 0, 0);
+}
+.projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.projects > h1 {
+    font-size: 3.2rem;
+    transition: .5s;
+    color: rgb(100, 0, 200);
+    letter-spacing: 5px;
+}
+.projects > h1:hover {
+    color: rgb(255, 0, 130) ;
+}
+.my-projects {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card {
+    width: 270px;
+    height: 330px;
+    background: rgb(200, 200, 200);
+    transition: all .8s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4), -1px -1px 5px rgba(0, 0, 0, .4);
+}
+.card:hover {
+   border-radius: 5px;
+   cursor: pointer;
+   transform: scale(1.02);
+   background: rgb(50, 50, 50);
+}
+.card:active {
+   transform: scale(.95);
+}
+.first-content {
+   height: 100%;
+   width: 100%;
+   transition: all .8s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 1;
+   border-radius: 5px;
+}
+.first-content img {
+    width: 200px;
+}
+.card:hover .first-content {
+   height: 0px;
+   opacity: 0;
+}
+.second-content {
+   height: 0%;
+   width: 100%;
+   opacity: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   transition: all 0.8s;    
+   color: rgb(255, 255, 255);
+   text-align: justify;
+   gap: 40px;
+   padding-inline: 10px;
+}
+.second-content p {
+    max-width: 95%;
+    word-wrap: break-word;
+    font-size: 1.17rem;
+}
+.second-content h2 {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.card:hover .second-content {
+   opacity: 1;
+   height: 100%;
+}
+
+/*-------------------------------------------------------------*/
+
+body.dark .form-contact button {
+    background: rgb(20, 20, 20);
+    border: 1px solid rgb(240, 240, 240);
+    color: rgb(240, 240, 240);
+}
+body.dark .form-contact button:hover{
+    background: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+}
+body.dark input, body.dark textarea {
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, .4), -1px -1px 3px rgba(255, 255, 255, .4);
+    background: rgb(50, 50, 50);
+    color: rgb(240, 240, 240);
+}
+body.dark input::placeholder, body.dark textarea::placeholder{
+    color: rgb(240, 240, 240);
+}
+body.dark input:focus, body.dark textarea:focus {
+    border: 1px solid rgb(240, 240, 240);
+    background: rgb(30, 30, 30);
+}
+body.dark input:focus::placeholder, body.dark textarea:focus::placeholder {
+    color: rgba(240, 240, 240, .4);
+}
+.contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.contact > h1 {
+    font-size: 3.2rem;
+    transition: .5s;
+    color: rgb(255, 0, 130);
+    letter-spacing: 5px;
+}
+.contact > h1:hover {
+    color: rgb(100, 0, 200) ;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 450px;
+}
+input, textarea {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .3s;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4), -1px -1px 3px rgba(0, 0, 0, .4);
+    background: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+}
+.form-contact .name {
+    width: 440px;
+    height: 60px;
+    padding: 10px;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+input:focus::placeholder, textarea:focus::placeholder {
+    color: rgba(0, 0, 0, .4);
+}
+input:focus, textarea:focus {
+    background: rgb(220, 220, 220);
+    border: 1px solid rgb(0, 0, 0);
+    transform: scale(1.03);
+}
+.form-contact div {
+    width: 440px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.form-contact div input {
+    width: 215px;
+    height: 60px;
+    padding: 10px;
+}
+.form-contact .message {
+    width: 440px;
+    height: 260px;
+    padding: 10px;
+}
+.form-contact button {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    transition: .5s;
+}
+.form-contact button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+.form-contact button:active {
+    transform: scale(.95);
+}
+
+/*-------------------------------------------------------------*/
+
+body.dark footer {
+    background: rgb(40, 40, 40);
+}
+body.dark footer div h4, body.dark footer div i {
+    color: rgb(255, 255, 255);
+}
+footer {
+    width: 100%;
+    height: 6vh;
+    background: rgb(220, 220, 220);
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div h4 {
+    color: rgb(0, 0, 0);
+}
+footer div i {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+footer div a {
+    transition: .5s;
+}
+footer div a:hover {
+    transform: scale(1.1);
+}
+
+/*-------------------------------------------------------------*/
+
+@media screen and (max-width: 440px) {
+    header {
+        width: 55%;
+        height: 7vh;
+    }
+    .menu.desktop {
+        display: none;
+    }
+    main{
+        width: 90%;
+    }
+    section {
+        width: 100%;
+    }
+
+    /*HOME*/
+    .div-text {
+        transform: translateY(0px);
+    }
+    .div-text h2 {
+        font-size: 1.8rem;
+    }
+    .div-text h1 {
+        font-size: 3.6rem;
+    }
+    .div-text h3 {
+        font-size: 1.2rem;
+    }
+    .div-text h4 {
+        font-size: 2rem;
+    }
+
+    /*ABOUT*/
+    .about h1 {
+        font-size: 2.8rem;
+    }
+    .text-about {
+        width: 100%;
+    }
+    .text-about p {
+        font-size: 1.25rem;
+    }
+
+    /*SKILLS*/
+    .skills {
+        height: auto;
+        margin-bottom: 15vh;
+    }
+    .skills h1 {
+        font-size: 2.8;
+    }
+    .skills div{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mySkills {
+        width: 340px;
+        height: 360px;
+    }
+
+    /*PROJECTS*/
+    .projects {
+        height: auto;
+        margin-bottom: 15vh;
+    }
+    .projects h1 {
+        font-size: 2.8rem;
+    }
+
+    /*CONTACT*/
+    .contact h1 {
+        font-size: 2.8rem;
+    }
+
+    .form-contact {
+        width: 340px;
+    }
+
+    .form-contact .name {
+        width: 340px;
+    }
+    .form-contact div {
+        width: 340px;
+    }
+    .form-contact div input {
+        width: 165px;
+    }
+    .form-contact .message {
+        width: 340px;
+    }
+
+    /*FOOTER*/
+    footer {
+        height: auto;
+    }
+    footer div {
+        flex-direction: column-reverse;
+        gap: 10px;
+        width: 100%;
+        margin-block: 10px;
+        margin-inline: 10px;
+    }
+    footer div h4 {
+        font-size: .65rem;
+    }
+}
