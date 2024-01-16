@@ -359,11 +359,11 @@ body.dark .barras span {
     animation: js 1.3s ease-in-out;
 }
 .excel {
-   width: 65%;
+   width: 60%;
    animation: excel 1.3s ease-in-out;
 }
 .power-bi {
-   width: 35%;
+   width: 15%;
    animation: power-bi 1.3s ease-in-out;
 }
 
