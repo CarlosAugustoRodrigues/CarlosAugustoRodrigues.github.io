@@ -435,6 +435,7 @@ body.dark .second-content {
 }
 .first-content img {
     width: 200px;
+    border-radius: 5px;
 }
 .card:hover .first-content {
    height: 0px;
