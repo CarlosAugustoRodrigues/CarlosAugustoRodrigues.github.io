@@ -107,12 +107,14 @@ body {
 @media screen and (max-width: 440px) {
     .start-text {
         font-size: 2rem;
+        text-align: center;
     }
     .game-board {
-        width: 420px;
-        height: 420px;
+        width: 400px;
+        height: 400px;
         grid-template-columns: repeat(4, 90px);
         grid-template-rows: repeat(4, 90px);
+        margin-inline: 10px;
     }
     .square {
         width: 90px;
